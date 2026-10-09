@@ -25,7 +25,7 @@ Imports:
     httr,
     lubridate,
     purrr,
-    rvest,
+    rvest (>= 1.0.0),
     timeDate
 Suggests:
     knitr,

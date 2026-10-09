@@ -7,7 +7,7 @@ test_that("account_archive errors for invalid login", {
 test_that("account_archive parses mocked archive page", {
   testthat::local_mocked_bindings(
     session_jump_to = function(x, url) list(dummy = TRUE),
-    html_table = function(session, fill = TRUE) {
+    html_table = function(session) {
       list(data.frame(
         Name = NA,
         Delete = NA,

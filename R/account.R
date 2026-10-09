@@ -142,7 +142,7 @@ account_archive <- function(account) {
     url = "https://lobsterdata.com/data_archive.php"
   )
 
-  archive <- html_table(session, fill = TRUE)[[1]]
+  archive <- html_table(session)[[1]]
 
   archive$Name <- archive$Delete <- NULL
 
